@@ -1,0 +1,645 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* --------------------------
+        common style 
+----------------------------- */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* ----------------------------------------
+        header slider section style
+------------------------------------------- */
+.slider {
+  width: 80%;
+  background: #161616;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.slider-left {
+  width: 50%;
+  color: white;
+  padding: 90px 0 90px 90px;
+}
+.slider-title {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 80px;
+  margin: 0;
+}
+.slider-description {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+.slider-btn {
+  display: flex;
+  align-items: center;
+}
+.slider-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 16px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+  animation: sliding 10s ease-in-out 0.5s infinite alternate;
+}
+.btn:hover {
+  background-color: black;
+  box-shadow: 0px 0px 20px 15px rgba(64, 248, 141, 0.5);
+}
+.slider-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-right img {
+  width: 32%;
+  height: 95%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ----------------------------------
+        main section style start
+------------------------------------- */
+.main-wrapper {
+  width: 80%;
+  display: flex;
+}
+.main-left {
+  display: flex;
+  justify-content: center;
+  margin-right: 24px;
+}
+.main-left-btn {
+  width: 312px;
+  height: 312px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+}
+.side-btn {
+  text-decoration: none;
+  padding: 17px 39px;
+  background-color: white;
+  color: #161616;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.main-left-btn a:hover {
+  background-color: #dd0000;
+  color: white;
+}
+.main-left-btn a:last-child {
+  background-color: #dd0000;
+  color: white;
+  margin-bottom: 0;
+}
+
+/* ------------------------------------
+        card section style start
+--------------------------------------- */
+.main-right {
+  width: 100%;
+}
+.main-right-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+.card {
+  border: 0.5px solid #e8e8e8;
+  border-radius: 10px;
+}
+.card-img img {
+  width: 100%;
+}
+.card-details {
+  padding: 20px;
+}
+.card-btn {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 16px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.card-btn:hover {
+  background-color: #dd0000;
+  color: white;
+  border-color: #dd0000;
+  cursor: pointer;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card-icon {
+  display: flex;
+  font-size: 16px;
+}
+.card-icon-left {
+  padding-right: 30px;
+}
+.card-icon i {
+  margin-right: 10px;
+}
+.view-all-btn {
+  margin: 50px 0;
+  text-align: center;
+  display: none;
+}
+.view-all-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+
+/* ---------------------------------------
+        footer section style start
+------------------------------------------ */
+.footer-container {
+  background-color: #161616;
+  color: white;
+}
+.footer-wrapper {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-title {
+  font-weight: 600;
+  font-size: 40px;
+}
+hr {
+  width: 80%;
+  margin: 50px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-nav {
+  width: 70%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0px 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.footer-menu {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-icon a {
+  text-decoration: none;
+}
+.footer-icon a i {
+  font-size: 25px;
+  color: white;
+  border: 15px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 0 2px;
+  margin-left: 16px;
+  transition: background-color 0.5s ease-in-out;
+}
+.footer-icon a i:hover {
+  background-color: rgb(253, 118, 7);
+}
+
+/* upcoming match page design start */
+/* card style start */
+.match {
+  border: 0.5px solid #e8e8e8;
+}
+.match-schedule {
+  padding: 50px 30px;
+}
+.flag-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flag-img img {
+  width: 40%;
+}
+.flag-img p {
+  font-weight: 700;
+  font-size: 16px;
+}
+.vs {
+  font-weight: 700;
+  font-size: 16px;
+}
+.match-details {
+  padding-top: 20px;
+  text-align: center;
+}
+.match-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.match-time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d4d4d;
+}
+/* card style end */
+/* upcoming match page design end */
+
+/* all group page design start */
+/* card style start */
+.card-bg {
+  background-color: #e6dce1;
+}
+.group-name {
+  background-color: rgb(36, 248, 43);
+  color: white;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding: 25px 0;
+}
+.all-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.team {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  color: white;
+  margin: 5px 0;
+  background-color: rgb(11, 11, 11);
+  border-radius: 5px;
+}
+.team img {
+  width: 30%;
+  border-radius: 5px;
+}
+.team p {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+/* card style end */
+/* all group page design end */
+
+/* resposive design start*/
+/* phone device 320px — 576px */
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+  .slider {
+    text-align: center;
+    flex-direction: column;
+  }
+  .slider-left {
+    width: 80%;
+    padding: 40px 0;
+  }
+  .slider-title {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .slider-description {
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+  }
+  .slider-btn {
+    justify-content: center;
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .football {
+    margin-left: 10px;
+    width: 7%;
+  }
+  .slider-right img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .main-left {
+    margin: 0;
+  }
+  .main-left-btn {
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .main-left-btn a {
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #e8e8e8;
+    padding: 9px 18px;
+  }
+  .main-left-btn a:last-child {
+    padding: 9px 40px;
+  }
+  .main-right-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* all group page  style start*/
+  .vs::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .vs::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .team p {
+    font-size: 21px;
+  }
+  /* all group page  style end */
+  .footer-nav {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    line-height: 50px;
+  }
+  .footer-menu {
+    padding: 10px 25px;
+  }
+}
+
+/* tablet device 577px — 768px */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  .slider {
+    height: 25em;
+  }
+  .slider-left {
+    padding: 0 0 0 40px;
+  }
+  .slider-title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .slider-description {
+    font-size: 15px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+  .football {
+    margin-left: 10px;
+    width: 12%;
+  }
+  .slider-right img {
+    width: 35%;
+    height: 20em;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .main-left {
+    margin: 0 0 24px 0;
+  }
+  .main-left-btn {
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .main-left-btn .side-btn {
+    margin-right: 5px;
+  }
+  .main-left-btn .side-btn:last-child {
+    margin-right: 0px;
+  }
+  .main-left-btn a {
+    width: 230px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    padding: 9px 0;
+    margin: 0;
+  }
+  .main-right-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .temp-card {
+    display: none;
+  }
+  /* all group page style start */
+  .team p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .vs::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .vs::before {
+    content: "\a";
+    white-space: pre;
+  }
+  /* all group page style end */
+  .view-all-btn {
+    display: block;
+  }
+  hr {
+    width: 85%;
+  }
+  .footer-nav {
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 20px;
+  }
+  .footer-menu {
+    font-size: 15px;
+    padding: 0;
+  }
+  .menu5 {
+    grid-column: 2/3;
+  }
+}
+
+/* laptop device  769px - 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .slider {
+    height: 25em;
+  }
+  .slider-left {
+    padding: 0 0 0 40px;
+  }
+  .slider-title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .slider-description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .btn {
+    font-size: 20px;
+    padding: 12px 10px;
+  }
+  .football {
+    margin-left: 10px;
+    width: 12%;
+  }
+  .slider-right img {
+    width: 35%;
+    height: 23em;
+  }
+  .main-right-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* laptop device  993px - 1200px */
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .slider {
+    height: 25em;
+  }
+  .slider-left {
+    padding: 0 0 0 60px;
+  }
+  .slider-title {
+    font-size: 35px;
+    line-height: 33px;
+  }
+  .slider-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .btn {
+    padding: 12px 15px;
+  }
+  .football {
+    margin-left: 10px;
+    width: 12%;
+  }
+  .slider-right img {
+    width: 32%;
+    height: 23em;
+  }
+  .main-right-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* all group page  style start*/
+  .vs::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .vs::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .team p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .temp-card {
+    display: none;
+  }
+  /* all group page  style end */
+}
+
+/* Large device  1201px - 1400px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .slider {
+    height: 25em;
+  }
+  .slider-left {
+    padding: 0 0 0 70px;
+  }
+  .slider-title {
+    font-size: 40px;
+    line-height: 33px;
+  }
+  .slider-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn {
+    padding: 12px 15px;
+  }
+  .football {
+    margin-left: 10px;
+    width: 9%;
+  }
+  .slider-right img {
+    width: 28%;
+    height: 23em;
+  }
+  .main-right-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* all group page  style start*/
+  .vs::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .vs::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .team p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+/* resposive design end*/
